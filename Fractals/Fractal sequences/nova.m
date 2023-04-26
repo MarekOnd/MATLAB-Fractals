@@ -56,8 +56,6 @@ colormap(gray);
 toc
 return;
 
-% USEFUL COMMANDS FOR EDITING OUTPUT FURTHER
-% colormapeditor
 
 
 

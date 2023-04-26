@@ -33,7 +33,15 @@ close(writerObj);
 %% ONE FRAME
 [result distances] = newtonMatrices(polynomialRoots,resX,resY,iterations);
 image(result./max(max(result)).*254);
-colormap(gray)
+colormap(hsv)
+
+%% LOAD EXAMPLE
+% prerendered examples
+load("Examples/threeRoots.mat");% write directions to example from current directory
+image(matrix./max(max(matrix)).*254);
+colormap(hsv)
+
+
 
 
 
